@@ -18,7 +18,7 @@ User-Friendly Interface: The HTML structure is designed to be intuitive and acce
 ### Clone the repository:
 bash
 Copy code
-- **git clone**: [GitHub Repository Link]
+- **git clone**: https://github.com/Dev-patra/BharatIntern-TASK-2-WeatherApp.git
 
 ## Future Enhancements
 - **Additional Weather Metrics**: Plan to add features like hourly forecasts, wind speed, humidity, and other weather-related metrics.
