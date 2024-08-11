@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('assets/weatherBG1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.header {
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(225, 225, 225, .1);
+    backdrop-filter: blur(30px);
+width: 30%;
+height: 10%;
+  
+}
+.weather-icon {
+    width: 70px;
+    height: 70px;
+    margin-right: 2px;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+
+.container {
+    position: relative;
+    background-color: rgba(225, 225, 225, .1);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(225, 225, 225, .2);
+    width: 350px;
+    height: 100px;
+    border-radius: 16px;
+    padding: 20px;
+    color: #fff;
+    transition: height .6s ease;
+  
+}
+
+.searchBox {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.searchBox input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1.5px solid gray;
+    outline: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 0 48px 0 42px;
+}
+
+.searchBox input::placeholder {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.searchBox i {
+    position: absolute;
+    left: 10px;
+    color: #fff;
+}
+
+.searchBox button {
+
+    position: absolute;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    color: #fff;
+    padding: 0 40px;
+    cursor: pointer;
+}
+
+.weatherBox {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.weather img {
+    width: 45%;
+}
+
+.temperature {
+    position: relative;
+    font-size: 54px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.temperature span {
+    position: absolute;
+    font-size: 20px;
+}
+
+.description {
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.weatherDetails {
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+
+}
+
+.weatherBox,
+.weatherDetails,
+.notFound {
+    visibility: hidden;
+}
+
+.weatherBox.active,
+.weatherDetails.active,
+.notFound.active {
+    visibility: visible;
+}
+
+.weatherDetails .humidity,
+.weatherDetails .wind {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    width: 50%;
+}
+
+.weatherDetails i {
+    font-size: 45px;
+    margin-right: 10px;
+}
+
+.weatherDetails span {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.weatherDetails p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.notFound {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+
+}
+
+.notFound img {
+    width: 70px;
+}
+
+.notFound p {
+    font-size: 20px;
+    font-weight: 400;
+}
